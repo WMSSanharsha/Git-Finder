@@ -3,7 +3,7 @@ import { useEffect, useContext } from "react";
 import GithubContext from "../context/github/GithubContext";
 import { Link, useParams } from "react-router-dom";
 import Spinner from "../components/layout/Spinner";
-import RepoList from "../components/repos/RepoLIst";
+import RepoList from "../components/repos/RepoList";
 
 function User() {
   const { getUser, user, loading, getUserRepos, repos } =
