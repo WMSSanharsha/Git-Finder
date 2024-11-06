@@ -25,7 +25,7 @@ function UserSearch() {
 
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 mb-8 gap-8">
-      <div>
+      <div flex items-center>
         <form onSubmit={handleSubmit}>
           <div className="form-control">
             <div className="relative">
@@ -46,11 +46,24 @@ function UserSearch() {
           </div>
         </form>
       </div>
+
       {users.length > 0 && (
-        <div>
+        <div className="flex items-center">
           <button onClick={clearUsers} className="btn btn-ghost btn-lg">
             Clear
           </button>
+        </div>
+      )}
+
+      {users.length === 0 && (
+        <div className="flex flex-col justify-center items-center text-center">
+          <h1 className="text-5xl font-bold text-gray-100 mb-2">
+            GitHub Finder
+          </h1>
+          <hr className="w-24 border-t-4 border-white mt-2 mb-4" />
+          <p className="text-xl text-gray-300">
+            Find GitHub Users Instantly by Searching Their Username
+          </p>
         </div>
       )}
     </div>
