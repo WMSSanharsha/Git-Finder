@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function NavBar({ title = "GitHub Finder" }) {
+function NavBar({ title = "GitHub FindX" }) {
   return (
     <nav className="navbar mb-12 shadow-lg bg-neutral text-neutral-content">
       <div className="container mx-auto">

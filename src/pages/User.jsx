@@ -90,16 +90,6 @@ function User() {
                   <div className="text-lg stat-value">{location}</div>
                 </div>
               )}
-              {blog && (
-                <div className="stat">
-                  <div className="stat-title text-md">Website</div>
-                  <div className="text-lg stat-value">
-                    <a href={websiteUrl} target="_blank" rel="noreferrer">
-                      {websiteUrl}
-                    </a>
-                  </div>
-                </div>
-              )}
               {twitter_username && (
                 <div className="stat">
                   <div className="stat-title text-md">Twitter</div>

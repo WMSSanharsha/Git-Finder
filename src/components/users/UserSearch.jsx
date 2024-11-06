@@ -58,7 +58,7 @@ function UserSearch() {
       {users.length === 0 && (
         <div className="flex flex-col justify-center items-center text-center">
           <h1 className="text-5xl font-bold text-gray-100 mb-2">
-            GitHub Finder
+            GitHub FindX
           </h1>
           <hr className="w-24 border-t-4 border-white mt-2 mb-4" />
           <p className="text-xl text-gray-300">
