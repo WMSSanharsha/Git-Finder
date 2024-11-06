@@ -15,7 +15,7 @@ function UserResults() {
       </div>
     );
   } else {
-    // return <Spinner />;
+    return <Spinner />;
   }
 }
 

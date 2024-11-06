@@ -5,8 +5,6 @@ const GithubContext = createContext();
 const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
 const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
 
-console.log(GITHUB_URL);
-
 // export const GithubProvider = ({ children }) => {
 // const [users, setUsers] = useState([]);
 // const [loading, setLoading] = useState(true);
@@ -14,7 +12,7 @@ console.log(GITHUB_URL);
 export const GithubProvider = ({ children }) => {
   const initialState = {
     users: [],
-    loading: true,
+    loading: false,
   };
 
   const [state, dispatch] = useReducer(githubReducer, initialState);
@@ -55,12 +53,21 @@ export const GithubProvider = ({ children }) => {
   //   });
   // };
 
+  // Clear Search Results
+
+  const clearUsers = () => dispatch({ type: "CLEAR_USERS" });
+
   //set loading
   const setLoading = () => dispatch({ type: "SET_LOADING" });
 
   return (
     <GithubContext.Provider
-      value={{ users: state.users, loading: state.loading, searchUsers }}
+      value={{
+        users: state.users,
+        loading: state.loading,
+        searchUsers,
+        clearUsers,
+      }}
     >
       {children}
     </GithubContext.Provider>
