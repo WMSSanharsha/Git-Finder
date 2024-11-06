@@ -11,7 +11,7 @@ function About() {
         <p>- Developed by Sakila Sanharsha - </p>
       </div>
       <div className="h-1/5 w-1/5">
-        <img src="src\assets\mylogo.png" alt="My Logo" />
+        <img src="/images/mylogo.png" alt="My Logo" />
       </div>
     </div>
   );
