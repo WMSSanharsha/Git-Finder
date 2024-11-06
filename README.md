@@ -4,6 +4,8 @@
 
 This project is a GitHub User Profile Viewer built with React. It allows users to search for GitHub users and view their profiles, including information such as followers, following, public repositories, and more. The application fetches data from the GitHub API and displays it in a user-friendly interface.
 
+-Live Preview - https://github-findx.netlify.app/
+
 ## Features
 
 - Search for GitHub users by username.
